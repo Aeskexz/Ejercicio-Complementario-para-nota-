@@ -1,10 +1,15 @@
 .vote-option {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #0066ff 0%, #0091ff 100%);
   border-radius: 12px;
   padding: 20px;
   margin: 15px 0;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vote-option-leading {
+  border: 2px solid #66b3ff;
+  box-shadow: 0 0 0 3px rgba(102, 179, 255, 0.35), 0 8px 24px rgba(0, 82, 204, 0.35);
 }
 
 .vote-option:hover {
@@ -44,11 +49,60 @@
   margin-bottom: 12px;
 }
 
+.progress-bar-leading {
+  background-color: rgba(255, 255, 255, 0.35);
+}
+
 .progress-fill {
   height: 100%;
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(90deg, #66b3ff, #00a2ff);
   transition: width 0.3s ease;
   border-radius: 12px;
+}
+
+.progress-fill-leading {
+  background: linear-gradient(90deg, #b3d9ff, #66b3ff);
+  box-shadow: 0 0 12px rgba(179, 217, 255, 0.8);
+}
+
+.rename-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.rename-input {
+  flex: 1;
+  border: none;
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: #003f9e;
+}
+
+.rename-input:focus {
+  outline: 2px solid #b3d9ff;
+}
+
+.rename-btn {
+  background-color: #e8f2ff;
+  color: #0059d6;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: all 0.2s;
+}
+
+.rename-btn:hover {
+  background-color: #d5e7ff;
+  transform: translateY(-1px);
+}
+
+.rename-btn:active {
+  transform: translateY(0);
 }
 
 .option-footer {
@@ -65,7 +119,7 @@
 
 .vote-btn {
   background-color: white;
-  color: #667eea;
+  color: #0059d6;
   border: none;
   padding: 8px 20px;
   border-radius: 20px;
@@ -76,7 +130,7 @@
 }
 
 .vote-btn:hover {
-  background-color: #f0f0f0;
+  background-color: #e8f2ff;
   transform: scale(1.05);
 }
 
