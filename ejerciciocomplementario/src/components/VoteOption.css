@@ -1,0 +1,85 @@
+.vote-option {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 15px 0;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.vote-option:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.option-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.option-header h3 {
+  margin: 0;
+  color: white;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.percentage {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 24px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 12px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.8));
+  transition: width 0.3s ease;
+  border-radius: 12px;
+}
+
+.option-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vote-count {
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.vote-btn {
+  background-color: white;
+  color: #667eea;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-size: 0.95rem;
+}
+
+.vote-btn:hover {
+  background-color: #f0f0f0;
+  transform: scale(1.05);
+}
+
+.vote-btn:active {
+  transform: scale(0.98);
+}
